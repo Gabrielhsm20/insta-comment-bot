@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input, textarea, button {
+    outline: none;
+}
+
+.extension-form {
+    width: 400px;
+    padding: 20px 15px;
+}
+
+.extension-form h2 {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.extension-form .logo .bot {
+    width: 48px;
+    height: 48px;
+    margin: 0 calc(50% - 24px);
+    background-image: url('../images/bot.png');
+    float: left;
+}
+
+.extension-form .logo .bil {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.extension-form .field,
+.extension-form .field label,
+.extension-form .field input,
+.extension-form .field textarea{
+    width: 100%;
+}
+
+.extension-form .field label {
+    font-size: 13px;
+}
+
+.extension-form .field input,
+.extension-form .field textarea {
+    height: 35px;
+    margin: 5px 0 10px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+
+.extension-form .field textarea {
+    height: 90px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 90px;
+}
+
+.extension-form button {
+    padding: 10px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    border: none;
+    font-weight: 600;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity .2s;
+}
+
+.extension-form button[disabled] {
+    opacity: 0.7;
+}

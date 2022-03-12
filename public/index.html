@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InstaCommentBot</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <form class="extension-form">
+            <h2>InstaCommentBot</h2>
+            <div class="field">
+                <label for="listComments">Lista de possíveis comentários (separados por quebra de linha):</label>
+                <textarea id="listComments" placeholder="Comentário 1&#10;Comentário 2&#10;Comentário 3&#10;..."></textarea>
+            </div>
+            <div class="field">
+                <label for="intervalBetweenComments">Intervalo entre comentários (segundos):</label>
+                <input id="intervalBetweenComments" type="number" min="10" value="10" />
+            </div>
+            <div class="field">
+                <label for="intervalGroupComments">Intervalo a cada grupo de comentários (segundos):</label>
+                <input id="intervalGroupComments" type="number" min="0" value="300" />
+            </div>
+            <div class="field">
+                <label for="groupOfComments">Grupo de comentários (quantidade):</label>
+                <input id="groupOfComments" type="number" min="0" value="5" />
+            </div>
+            <button id="start" type="button">Iniciar</button>
+        </form>
+        <script src="js/main.js"></script>
+    </body>
+</html>
